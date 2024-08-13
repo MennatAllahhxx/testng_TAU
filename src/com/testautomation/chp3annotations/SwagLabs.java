@@ -1,4 +1,4 @@
-package com.testautomation;
+package com.testautomation.chp3annotations;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -13,8 +13,6 @@ import java.util.concurrent.TimeUnit;
 
 public class SwagLabs {
     WebDriver driver;
-
-    @Test
 
     @BeforeClass
     public void setUp()  {
@@ -45,8 +43,6 @@ public class SwagLabs {
         System.out.println("2. sign in");
     }
 
-
-
     @Test(priority = 2)
     public void addBackpack() {
         WebElement backpack = driver.findElement(By.id("item_4_title_link"));
@@ -58,7 +54,7 @@ public class SwagLabs {
         WebElement backToProductsBtn = driver.findElement(By.id("back-to-products"));
         backToProductsBtn.click();
 
-        System.out.println("6. add backpack");
+        System.out.println("3. add backpack");
     }
 
     @Test(priority = 3)
@@ -70,12 +66,12 @@ public class SwagLabs {
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         logoutBtn.click();
 
-        System.out.println("7. sign out");
+        System.out.println("4. sign out");
     }
 
     @AfterClass
     public void tearDown() {
-        System.out.println("8. close chrome");
+        System.out.println("5. close chrome");
         driver.quit();
     }
 }
