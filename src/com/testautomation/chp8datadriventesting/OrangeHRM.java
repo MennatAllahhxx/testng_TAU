@@ -1,6 +1,5 @@
 package com.testautomation.chp8datadriventesting;
 
-import com.testautomation.chp7dependencytesting.SignInDP;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

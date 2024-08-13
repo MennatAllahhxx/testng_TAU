@@ -1,4 +1,4 @@
-package com.testautomation.chp7dependencytesting;
+package com.testautomation.chp8datadriventesting;
 
 import org.testng.annotations.DataProvider;
 
