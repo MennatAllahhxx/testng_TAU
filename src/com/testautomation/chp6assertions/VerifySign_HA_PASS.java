@@ -13,8 +13,6 @@ import org.testng.asserts.SoftAssert;
 
 import java.util.concurrent.TimeUnit;
 
-import static org.testng.Assert.*;
-
 public class VerifySign_HA_PASS {
     WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
