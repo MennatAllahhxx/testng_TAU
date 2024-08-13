@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="cross browser testing">
+    <parameter name="URL" value="https://testautomationu.applitools.com/"/>
+    <test name="Test On Edge Driver">
+        <parameter name="BrowserType" value="Edge Driver"/>
+        <classes>
+            <class name="com.testautomation.chp9crossbrowsertesting.TestAutomationUniversity"/>
+        </classes>
+    </test>
+
+    <test name="Test On Firefox">
+        <parameter name="BrowserType" value="Firefox"/>
+        <classes>
+            <class name="com.testautomation.chp9crossbrowsertesting.TestAutomationUniversity"/>
+        </classes>
+    </test>
+
+    <test name="Test On Chrome">
+        <parameter name="BrowserType" value="Chrome"/>
+        <classes>
+            <class name="com.testautomation.chp9crossbrowsertesting.TestAutomationUniversity"/>
+        </classes>
+    </test>
+</suite>
