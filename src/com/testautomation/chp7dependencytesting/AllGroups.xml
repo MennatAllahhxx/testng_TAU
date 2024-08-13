@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testng_TAU">
+    <test name="All Groups Test">
+        <groups>
+            <run>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.testautomation.chp7dependencytesting.Amazon_FakeSite"/>
+        </classes>
+    </test>
+</suite>

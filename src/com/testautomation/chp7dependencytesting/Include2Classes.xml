@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testng_TAU">
+    <test name="include groups tests from different classes">
+        <groups>
+            <run>
+                <include name="regression"/>
+                <include name="env_application"/>
+                <include name="initialize"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.testautomation.chp7dependencytesting.Amazon_FakeSite"/>
+            <class name="com.testautomation.chp7dependencytesting.Groups_DependsOnGroups_PASS"/>
+        </classes>
+    </test>
+</suite>
