@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testng_TAU">
+    <test name="configuration annotation Test">
+        <classes>
+            <class name="com.testautomation.chp3annotations.ConfigurationAnnotations">
+                <methods>
+                    <include name="searchCustomer"/>
+                    <include name="searchProduct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
